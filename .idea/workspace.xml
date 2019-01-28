@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1bc21f3e-afbc-4fbc-96d7-6ad279352b4f" name="Default Changelist" comment="" />
+    <list default="true" id="1bc21f3e-afbc-4fbc-96d7-6ad279352b4f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/4_ParticleSwarmOptimisation/BraninRcos.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4_ParticleSwarmOptimisation/config.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4_ParticleSwarmOptimisation/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4_ParticleSwarmOptimisation/particle.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4_ParticleSwarmOptimisation/pso.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/pip-selfcheck.json" beforeDir="false" afterPath="$PROJECT_DIR$/venv/pip-selfcheck.json" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,114 +23,95 @@
     <SUITE FILE_PATH="coverage/PythonProjectsAI$Main__5_.coverage" NAME="Main (5) Coverage Results" MODIFIED="1547870791130" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/3_EvolutionaryStrategies" />
     <SUITE FILE_PATH="coverage/PythonProjectsAI$Main__3_.coverage" NAME="Main (3) Coverage Results" MODIFIED="1547870238934" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/3_EvolutionaryStrategies/BraninRcos" />
     <SUITE FILE_PATH="coverage/PythonProjectsAI$Main__4_.coverage" NAME="Main (4) Coverage Results" MODIFIED="1547870402498" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/3_EvolutionaryStrategies/BraninRcos" />
+    <SUITE FILE_PATH="coverage/PythonProjectsAI$main.coverage" NAME="main Coverage Results" MODIFIED="1548675615753" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/4_ParticleSwarmOptimisation" />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="-159422116">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="6" />
+          <entry key="project.closed" value="8" />
+          <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.14" value="1" />
           <entry key="project.open.time.3" value="3" />
-          <entry key="project.open.time.5" value="2" />
-          <entry key="project.opened" value="6" />
+          <entry key="project.open.time.4" value="1" />
+          <entry key="project.open.time.5" value="3" />
+          <entry key="project.opened" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="26" />
+          <entry key="py" value="45" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="26" />
+          <entry key="Python" value="45" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dummy" value="20" />
-          <entry key="py" value="4512" />
+          <entry key="dummy" value="21" />
+          <entry key="py" value="6308" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="20" />
-          <entry key="Python" value="4512" />
+          <entry key="PLAIN_TEXT" value="21" />
+          <entry key="Python" value="6308" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/4_ParticleSwarmOptimisation/main.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="224">
+              <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+                <marker date="1548675606053" expanded="true" signature="89:90" ph="..." />
+                <marker date="1548675606053" expanded="true" signature="89:95" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/3_EvolutionaryStrategies/Main.py">
+        <entry file="file://$PROJECT_DIR$/4_ParticleSwarmOptimisation/pso.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
-              <caret line="38" column="16" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="16" />
-              <folding>
-                <element signature="e#1#62#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/3_EvolutionaryStrategies/BraninRcos/GenerationDetails.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="32">
-              <caret line="2" column="29" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="29" />
-              <folding>
-                <marker date="1547895130367" expanded="true" signature="17:22" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/3_EvolutionaryStrategies/BraninRcos/PopulationDetails.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="64">
-              <caret line="4" selection-start-line="4" selection-end-line="4" />
-              <folding>
-                <marker date="1547899915775" expanded="true" signature="17:18" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/3_EvolutionaryStrategies/BraninRcos/EvolutionaryStrategy.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="395">
-              <caret line="53" column="21" selection-start-line="53" selection-start-column="8" selection-end-line="53" selection-end-column="21" />
+            <state relative-caret-position="347">
+              <caret line="31" column="6" selection-start-line="31" selection-start-column="6" selection-end-line="31" selection-end-column="6" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
-                <marker date="1547903812170" expanded="true" signature="266:271" ph="..." />
+                <marker date="1548675610471" expanded="true" signature="149:150" ph="..." />
+                <marker date="1548675610471" expanded="true" signature="149:183" ph="..." />
+                <marker date="1548675610471" expanded="true" signature="1382:1389" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/3_EvolutionaryStrategies/BraninRcos/BraninRcosObjectiveFunction.py">
+        <entry file="file://$PROJECT_DIR$/4_ParticleSwarmOptimisation/particle.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="208">
+              <caret line="13" column="65" selection-start-line="13" selection-start-column="65" selection-end-line="13" selection-end-column="65" />
               <folding>
-                <marker date="1547830498500" expanded="true" signature="36:37" ph="..." />
-                <marker date="1547830498500" expanded="true" signature="60:129" ph="..." />
+                <marker date="1548675564500" expanded="true" signature="86:91" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/3_EvolutionaryStrategies/BraninRcos/ArtificalChomosome.py">
+        <entry file="file://$PROJECT_DIR$/4_ParticleSwarmOptimisation/config.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
-              <caret line="7" column="36" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="36" />
+            <state relative-caret-position="16">
+              <caret line="1" column="23" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="23" />
               <folding>
-                <marker date="1547832419537" expanded="true" signature="40:41" ph="..." />
-                <marker date="1547832419537" expanded="true" signature="40:46" ph="..." />
+                <marker date="1548603304589" expanded="true" signature="49:54" ph="..." />
               </folding>
             </state>
           </provider>
@@ -142,6 +131,9 @@
       <find>sigmaX1</find>
     </findStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -156,6 +148,12 @@
         <option value="$PROJECT_DIR$/3_EvolutionaryStrategies/BraninRcos/Config.py" />
         <option value="$PROJECT_DIR$/3_EvolutionaryStrategies/BraninRcos/EvolutionaryStrategy.py" />
         <option value="$PROJECT_DIR$/3_EvolutionaryStrategies/Main.py" />
+        <option value="$PROJECT_DIR$/4_ParticleSwarmOptimisation/BraninRcos.py" />
+        <option value="$PROJECT_DIR$/4_ParticleSwarmOptimisation/config.py" />
+        <option value="$PROJECT_DIR$/4_ParticleSwarmOptimisation/Particle.py" />
+        <option value="$PROJECT_DIR$/4_ParticleSwarmOptimisation/particle.py" />
+        <option value="$PROJECT_DIR$/4_ParticleSwarmOptimisation/main.py" />
+        <option value="$PROJECT_DIR$/4_ParticleSwarmOptimisation/pso.py" />
       </list>
     </option>
   </component>
@@ -165,17 +163,19 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="1782" />
     <option name="y" value="124" />
     <option name="width" value="1346" />
     <option name="height" value="688" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -196,13 +196,22 @@
             </path>
             <path>
               <item name="PythonProjectsAI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PythonProjectsAI" type="462c0819:PsiDirectoryNode" />
+              <item name="4_ParticleSwarmOptimisation" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PythonProjectsAI" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="PythonProjectsAI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; Python 3.7 (PythonProjectsAI) &gt;" type="70bed36:NamedLibraryElementNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -229,7 +238,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Main (1)">
+  <component name="RunManager" selected="Python.main">
     <configuration name="Main (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PythonProjectsAI" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -244,28 +253,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/3_EvolutionaryStrategies/Main.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Main (3)" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="PythonProjectsAI" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/3_EvolutionaryStrategies/BraninRcos" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="D:\PhD\IS - AI - ACBT\PythonProjectsAI\3_EvolutionaryStrategies\Main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -340,20 +327,42 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="PythonProjectsAI" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/4_ParticleSwarmOptimisation" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/4_ParticleSwarmOptimisation/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <list>
-      <item itemvalue="Python.Main (3)" />
       <item itemvalue="Python.Main (4)" />
       <item itemvalue="Python.Main (5)" />
       <item itemvalue="Python.Main" />
       <item itemvalue="Python.Main (1)" />
+      <item itemvalue="Python.main" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.main" />
         <item itemvalue="Python.Main (1)" />
         <item itemvalue="Python.Main" />
         <item itemvalue="Python.Main (5)" />
         <item itemvalue="Python.Main (4)" />
-        <item itemvalue="Python.Main (3)" />
       </list>
     </recent_temporary>
   </component>
@@ -371,14 +380,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1358" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="1358" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.26279318" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26812366" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" weight="0.4127844" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" visible="true" weight="0.4127844" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3997833" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -460,25 +470,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/3_EvolutionaryStrategies/BraninRcos/BraninRcosObjectiveFunction.py">
+    <entry file="file://$PROJECT_DIR$/3_EvolutionaryStrategies/BraninRcos/GenerationDetails.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <marker date="1547830498500" expanded="true" signature="36:37" ph="..." />
-            <marker date="1547830498500" expanded="true" signature="60:129" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/3_EvolutionaryStrategies/BraninRcos/ArtificalChomosome.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="7" column="36" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="36" />
-          <folding>
-            <marker date="1547832419537" expanded="true" signature="40:41" ph="..." />
-            <marker date="1547832419537" expanded="true" signature="40:46" ph="..." />
-          </folding>
+        <state relative-caret-position="32">
+          <caret line="2" column="29" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -486,9 +481,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="64">
           <caret line="4" selection-start-line="4" selection-end-line="4" />
-          <folding>
-            <marker date="1547899915775" expanded="true" signature="17:18" ph="..." />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/3_EvolutionaryStrategies/BraninRcos/ArtificalChomosome.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="7" column="36" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/3_EvolutionaryStrategies/BraninRcos/BraninRcosObjectiveFunction.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="11" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -496,39 +502,77 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
           <caret line="6" column="39" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="39" />
-          <folding>
-            <marker date="1547903469545" expanded="true" signature="21:26" ph="..." />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4_ParticleSwarmOptimisation/BraninRcos.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="2" column="16" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/3_EvolutionaryStrategies/BraninRcos/EvolutionaryStrategy.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="395">
-          <caret line="53" column="21" selection-start-line="53" selection-start-column="8" selection-end-line="53" selection-end-column="21" />
+        <state relative-caret-position="64">
+          <caret line="4" selection-start-line="4" selection-end-line="4" selection-end-column="51" />
           <folding>
-            <element signature="e#0#18#0" expanded="true" />
             <marker date="1547903812170" expanded="true" signature="266:271" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/3_EvolutionaryStrategies/BraninRcos/GenerationDetails.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
-          <caret line="2" column="29" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="29" />
-          <folding>
-            <marker date="1547895130367" expanded="true" signature="17:22" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/3_EvolutionaryStrategies/Main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="38" column="16" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="16" />
+        <state relative-caret-position="427">
+          <caret line="59" column="27" selection-start-line="59" selection-start-column="8" selection-end-line="59" selection-end-column="27" />
           <folding>
             <element signature="e#1#62#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4_ParticleSwarmOptimisation/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16">
+          <caret line="1" column="23" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="23" />
+          <folding>
+            <marker date="1548603304589" expanded="true" signature="49:54" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4_ParticleSwarmOptimisation/particle.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="13" column="65" selection-start-line="13" selection-start-column="65" selection-end-line="13" selection-end-column="65" />
+          <folding>
+            <marker date="1548675564500" expanded="true" signature="86:91" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4_ParticleSwarmOptimisation/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+            <marker date="1548675606053" expanded="true" signature="89:90" ph="..." />
+            <marker date="1548675606053" expanded="true" signature="89:95" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4_ParticleSwarmOptimisation/pso.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="31" column="6" selection-start-line="31" selection-start-column="6" selection-end-line="31" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+            <marker date="1548675610471" expanded="true" signature="149:150" ph="..." />
+            <marker date="1548675610471" expanded="true" signature="149:183" ph="..." />
+            <marker date="1548675610471" expanded="true" signature="1382:1389" ph="..." />
           </folding>
         </state>
       </provider>
