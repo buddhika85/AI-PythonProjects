@@ -1,4 +1,5 @@
 import numpy as np
+import random
 
 from config import Configurations
 from particle import Particle
@@ -15,7 +16,8 @@ class ParticleSwarmOptimizer:
             random_x1 = np.random.uniform(-5, 10)
             random_x2 = np.random.uniform(0, 15)
             current_cost = branin_rcos_objective_function.CalculateBraninRcos(random_x1, random_x2)
-            particle = Particle(particleNumber + 1, [random_x1, random_x2], current_cost,
+            # current_velocity = 0
+            particle = Particle(particleNumber + 1, [random_x1, random_x2], current_cost, [0, 0],
                                 [random_x1, random_x2], current_cost)
             swarm_of_Particles.append(particle)
             # global best
@@ -29,10 +31,66 @@ class ParticleSwarmOptimizer:
         return swarm_of_Particles
 
     # run pso
-    ##def run_particle_swarm_optimisation(self, config: Configurations, initial_swarm):
+    def run_particle_swarm_optimisation(self, config: Configurations, initial_swarm):
+        # starting from second iteration and running all iterations after
+        swarm = initial_swarm   # for the 2nd Iter
+        for iterationNumber in range(2, (config.iterations + 1)):
+            branin_rcos_objective_function: BraninRcos = BraninRcos()
+            for particleNumber in range(0, len(swarm)):
+                # x1
+                x1 = swarm[particleNumber].current_position[0]
+                x1_velocity = swarm[particleNumber].current_velocity[0]
+                x1_personal_best = swarm[particleNumber].personal_best_position[0]
+                x1_global_best = Particle.global_best_position[0]
+                new_position_velocity = self.calculate_new_position(x1, x1_velocity, x1_personal_best, x1_global_best,
+                                                                    config, config.x1_min, config.x1_max)
+                swarm[particleNumber].current_position[0] = new_position_velocity[0]
+                swarm[particleNumber].current_velocity[0] =  new_position_velocity[1]
+                # x2
+                x2 = swarm[particleNumber].current_position[1]
+                x2_velocity = swarm[particleNumber].current_velocity[1]
+                x2_personal_best = swarm[particleNumber].personal_best_position[1]
+                x2_global_best = Particle.global_best_position[1]
+                new_position_velocity = self.calculate_new_position(x2, x2_velocity, x2_personal_best, x2_global_best,
+                                                                    config, config.x2_min, config.x2_max)
+                swarm[particleNumber].current_position[1] = new_position_velocity[0]
+                swarm[particleNumber].current_velocity[1] = new_position_velocity[1]
+                swarm[particleNumber].current_cost = branin_rcos_objective_function.CalculateBraninRcos(
+                    swarm[particleNumber].current_position[0], swarm[particleNumber].current_position[1])
+                # personal best
+                if swarm[particleNumber].personal_best_cost > swarm[particleNumber].current_cost:
+                    swarm[particleNumber].personal_best_position = [swarm[particleNumber].current_position[0],
+                                                                    swarm[particleNumber].current_position[1]]
+                    swarm[particleNumber].personal_best_cost = swarm[particleNumber].current_cost
+                # global best
+                if Particle.global_best_cost > swarm[particleNumber].current_cost:
+                    Particle.global_best_position = [swarm[particleNumber].current_position[0],
+                                                                    swarm[particleNumber].current_position[1]]
+                    Particle.global_best_cost = swarm[particleNumber].current_cost
+        return swarm
 
 
     # displays the swarm
     def display_swarm(self, swarm):
         for particleNumber in range(0, len(swarm)):
             print(swarm[particleNumber])
+
+    # new position
+    def calculate_new_velocity(self, current_position, current_velocity, current_personal_best, current_global_best, config: Configurations, lower_bound, upper_bound) -> float:
+        do_again = True
+        new_velocity = 0
+        new_position = 0
+        while (do_again):
+            r1_random = random.uniform(0, 1)
+            r2_random = random.uniform(0, 1)
+            new_velocity = (config.w_inertia_weight * current_velocity) + \
+                           (r1_random * config.c1_cognitive_weight * (current_personal_best - current_position)) + \
+                           (r2_random * config.c2_social_weight * (current_global_best - current_position))
+            new_position = current_position + new_velocity
+            if new_position < lower_bound or new_position > upper_bound:
+                do_again = True
+            else:
+                do_again = False
+        return [new_position, new_velocity]
+
+

@@ -2,10 +2,11 @@ class Particle:
     global_best_position = [0, 0]
     global_best_cost = float("inf")
 
-    def __init__(self, particle_Number, current_position, current_cost,
+    def __init__(self, particle_Number, current_position, current_cost, current_velocity,
                  personal_best_position, personal_best_cost):
         self.particle_Number = particle_Number
         self.current_position = current_position
+        self.current_velocity = current_velocity
         self.current_cost = current_cost
         self.personal_best_position = personal_best_position
         self.personal_best_cost = personal_best_cost
