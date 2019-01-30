@@ -1,6 +1,6 @@
 class Configurations:
     particles_per_swarm = 1000
-    iterations = 100
+    iterations = 20
     x1_min = -5
     x1_max = 10
     x2_min = 0

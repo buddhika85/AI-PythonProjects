@@ -67,10 +67,10 @@ class ParticleSwarmOptimizer:
                     Particle.global_best_position = [swarm[particleNumber].current_position[0],
                                                                     swarm[particleNumber].current_position[1]]
                     Particle.global_best_cost = swarm[particleNumber].current_cost
-                print(f"Iteration {iterationNumber + 1}'s Particle {particleNumber + 1} done")
+                #print(f"Iteration {iterationNumber + 1}'s Particle {particleNumber + 1} done")
             # with each iteration w gets decreased
-            config.w_inertia_weight = config.w_inertia_weight * config.w_damping
-            print (f"Iteration {iterationNumber + 1} done")
+            #config.w_inertia_weight = config.w_inertia_weight * config.w_damping
+            print (f"Iteration {iterationNumber + 1} and {config.w_inertia_weight} done")
         return swarm
 
 
@@ -95,6 +95,7 @@ class ParticleSwarmOptimizer:
     # new position
     def calculate_new_position(self, current_position, current_velocity, current_personal_best, current_global_best,
                                config: Configurations, lower_bound, upper_bound) -> float:
+        adjusted_velocity = current_velocity
         do_again = True
         new_velocity = 0
         new_position = 0
@@ -109,17 +110,19 @@ class ParticleSwarmOptimizer:
                 do_again = True
                 # below will reduce time to get values with in lower and upper bounds
                 if new_position > upper_bound:
-                    current_velocity = current_velocity * 0.9
-                    print (current_velocity)
-                if new_position < lower_bound:
-                    current_velocity = current_velocity * 1.1
-                    print(current_velocity)
+                    current_velocity = current_velocity * 0.2
+                    #print ("u" + str(upper_bound) + ' n = ' + str(new_position) + ' ' + str(current_velocity) + ' ' + str(adjusted_velocity))
+                elif new_position < lower_bound and new_position < 0:
+                    current_velocity = current_velocity * -1
+                elif new_position < lower_bound:
+                    current_velocity = current_velocity * 1.2
+                    #print("l" + str(upper_bound) + ' n = ' + str(new_position) + ' ' + str(current_velocity) + ' ' + str(adjusted_velocity))
             else:
                 do_again = False
-            if (current_velocity == float("-inf")):
-                print ("minus inifinity")
-            if (current_velocity == float("inf")):
-                print ("positive inifinity")
+            if current_velocity == float("-inf"):
+               print ("minus inifinity")
+            if current_velocity == float("inf"):
+               print ("positive inifinity")
         return [new_position, new_velocity]
 
 
